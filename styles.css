@@ -30,7 +30,7 @@ fieldset{
   box-shadow:1px 1px 30px 0 #000000;
   margin:10px;;
 }
-input[type="submit"]{
+button{
   box-shadow:5px 5px 5px 0 #434242;
   display:block;
   border-color:grey;
@@ -71,4 +71,14 @@ input[type="checkbox"] {
 .checkbox-container{
   display:grid;
   grid-template-columns: auto auto auto auto;
+}
+span{
+  font-size: 13px;
+  color: rgb(192, 10, 10);
+  font-weight: 500;
+}
+
+#feedbackMessage{
+  font-size: 14px;
+  color: rgb(67, 67, 248);
 }

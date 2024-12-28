@@ -64,4 +64,11 @@ input[type="checkbox"] {
   padding-bottom:2em;
   }
 
+.bold{
+    font-weight: bold;
+  }
 
+.checkbox-container{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+}

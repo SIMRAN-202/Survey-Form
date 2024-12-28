@@ -15,30 +15,42 @@
   <form id="survey-form" method="post">
 
     <fieldset>
-      <label id="name-label" for="first_name">Enter first name:<input type="text" placeholder="simran" id="name" name="first_name" required></label>
-      <label for="last_name">Enter last name:<input type="text" id="name" name="last_name" required></label>
-      <label id="email-label" for="email_input">Enter email:<input type="email" placeholder="kaursimrankaur2003@gmail.com" id="email" name="email_input" required></label>
-      <label id="number-label" for="phone_number">Enter phone number:<input type="number" placeholder="01234567" id="number" name="phone_number" min="8" max="10"></label>
-      What is your current occupation? <select type="dropdown" id="dropdown" required>
+      <label id="name-label" for="first_name" class="bold">Enter first name:<input type="text" placeholder="simran" id="name" name="first_name" required></label>
+
+      <label for="last_name" class="bold">Enter last name:<input type="text" id="name" name="last_name" required></label>
+
+      <label id="email-label" for="email_input" class="bold">Enter email:<input type="email" placeholder="kaursimrankaur2003@gmail.com" id="email" name="email_input" required></label>
+
+      <label id="number-label" for="phone_number" class="bold">Enter phone number:<input type="number" placeholder="01234567" id="number" name="phone_number" min="8" max="10"></label>
+
+     <label for="occupation" class="bold"> What is your current occupation? <select type="dropdown" id="dropdown" required>
      <option value="">Select one</option>
      <option value="1">Student</option>    
-     <option value="2">Full-time employeed</option></select>
-
+     <option value="2">Full-time employeed</option></select></label>
 
 <hr>
-      <label> How satisfied are you with our comapny's services?</label>
+
+      <label class="bold"> How satisfied are you with our comapny's services?</label>
+
       <label for="unsatisfied"><input type="radio" id="unsatisfied" name="satisfaction" value="radio" class="inline">Unsatisfied</label>
       <label for="neutral"><input type="radio" id="neutral" name="satisfaction" value="radio" class="inline">Neutral</label>
-      <label for="satisfied"><input type="radio" id="satisfied" name="satisfaction" value="radio" class="inline">Satisfied</label><hr>
-      <label for="checkbox">How did you hear about us?</label>
+      <label for="satisfied"><input type="radio" id="satisfied" name="satisfaction" value="radio" class="inline">Satisfied</label>
+      
+<hr>
 
-      <input type="checkbox" id="checkbox" value="social_media">social media</label>
-      <input type="checkbox" id="checkbox" value="blog">Blog</label>
-      <input type="checkbox" id="checkbox" value="Search_engine">Search engine</label>
-      <input type="checkbox" id="checkbox" value="friend">Friend</label>
-      <label for="bio"><hr>
-   <label for="bio">Additional comments:</label>
-      <textarea id="bio" name="bio" rows="3" cols="20" placeholder="Tell us where we can improve..." ></textarea></label>
+      <label class="bold" for="checkbox">How did you hear about us?</label>
+      <div class="checkbox-container">
+          <input type="checkbox" id="checkbox" value="social_media">social media</label>
+          <input type="checkbox" id="checkbox" value="blog">Blog</label>
+          <input type="checkbox" id="checkbox" value="Search_engine">Search engine</label>
+          <input type="checkbox" id="checkbox" value="friend">Friend</label>
+      </div>
+        
+<hr>
+
+
+    <label for="bio" class="bold">Additional comments:</label>
+    <textarea id="bio" name="bio" rows="3" cols="20" placeholder="Tell us where we can improve..." ></textarea></label>
 
       <input type="reset" id="reset" value="Reset">
       <input type="submit" id="submit" value="Submit">
